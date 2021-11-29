@@ -7,7 +7,8 @@
 
 public protocol Functor {
     associatedtype A
+    associatedtype B
     associatedtype FB
 
-    func fmap(_ transform: (A) -> Any) -> FB
+    func fmap(_ transform: (A) -> B) -> FB
 }
